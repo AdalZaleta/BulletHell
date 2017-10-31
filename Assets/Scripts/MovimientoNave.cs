@@ -8,8 +8,11 @@ public class MovimientoNave : MonoBehaviour {
 	Vector2 LastTouchPos;
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 		LastTouchPos = InputMobileManager.GetPosition ();
+		Vector2 LimiteSuperiorIzq = Camera.main.ScreenToWorldPoint (Vector3.zero);
+		print (LimiteSuperiorIzq);
 	}
 	
 	// Update is called once per frame
