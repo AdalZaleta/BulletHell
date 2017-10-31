@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MovimientoNave : MonoBehaviour {
-
-	public float Velocidad = 0.1f;
 	Vector2 LastTouchPos;
+	public float Velocidad = 0.1f;
 
 	// Use this for initialization
 	void Start () {
