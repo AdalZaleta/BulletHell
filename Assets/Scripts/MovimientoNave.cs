@@ -23,6 +23,7 @@ public class MovimientoNave : MonoBehaviour {
 			print (InputMobileManager.GetPosition ());
 			Vector2 Posfinal = InputMobileManager.GetPosition ();
 			Vector2 deltaPos = LastTouchPos - Posfinal;
+
 			transform.Translate (-deltaPos.x * Velocidad, -deltaPos.y * Velocidad, 0);
 
 			LastTouchPos = Posfinal;
