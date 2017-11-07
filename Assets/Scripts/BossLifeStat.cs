@@ -21,8 +21,8 @@ public class BossLifeStat : MonoBehaviour {
 	{
 		Debug.Log ("collision");
 		if (_col.gameObject.CompareTag ("Bullet")) {
-			Debug.Log ("collision");
 			BLife--;
+			Destroy (_col.gameObject);
 		}
 	}
 }

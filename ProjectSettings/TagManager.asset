@@ -7,6 +7,10 @@ TagManager:
   - PowerUp_Escudo
   - PowerUp_Rayo
   - Bullet
+  - EBullet
+  - PowerUp_Explosion
+  - PowerUp_Escopeta
+  - PowerUp_quadShot
   layers:
   - Default
   - TransparentFX

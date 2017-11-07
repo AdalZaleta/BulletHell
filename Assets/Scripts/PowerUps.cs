@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PowerUps : MonoBehaviour {
 	public int Vida;
+	public int EscudoLife;
 	public bool Rayo;
 	public bool Explosion = false;
 	public bool Escopeta = false;
@@ -11,6 +12,7 @@ public class PowerUps : MonoBehaviour {
 
 	void Start () {
 		Vida = 3;
+		EscudoLife = 10;
 		gameObject.transform.GetChild (0).GetComponent<MeshRenderer> ().enabled = false;
 	}
 	void Update()
@@ -19,9 +21,13 @@ public class PowerUps : MonoBehaviour {
 		{
 			Destroy (this.gameObject);
 		}
+		if (EscudoLife == 0) {
+			gameObject.transform.GetChild (0).GetComponent<MeshRenderer> ().enabled = false;
+			EscudoLife = 10;
+		}
 	}
 	
-	void OnCollisionEnter2D(Collision2D _col)
+	void OnTriggerEnter2D(Collider2D _col)
 	{
 		//Checa si el escudo está activo
 		if (gameObject.transform.GetChild (0).GetComponent<MeshRenderer> ().enabled) {
@@ -32,6 +38,7 @@ public class PowerUps : MonoBehaviour {
 		} else {
 			if (_col.gameObject.CompareTag ("EBullet")) {
 				Vida--;
+				Destroy (_col.gameObject);
 			}
 		}
 

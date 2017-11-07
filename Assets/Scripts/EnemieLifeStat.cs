@@ -18,10 +18,11 @@ public class EnemieLifeStat : MonoBehaviour {
 	}
 	
 	
-	void OnCollisionEnter2D(Collision2D _col)
+	void OnTriggerEnter2D(Collider2D _col)
 	{
 		if (_col.gameObject.CompareTag ("Bullet")) {
 			ELife--;
+			Destroy (_col.gameObject);
 		}
 	}
 }
