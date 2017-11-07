@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BossLifeStat : MonoBehaviour {
-	private int BLife = 30;
+	public int BLife = 30;
 
 	// Use this for initialization
 	void Start () {
@@ -16,11 +16,12 @@ public class BossLifeStat : MonoBehaviour {
 			Destroy (this.gameObject);
 		}
 	}
-
-
-	void OnCollisionEnter2D(Collision2D _col)
+	
+	void OnTriggerEnter2D(Collider2D _col)
 	{
+		Debug.Log ("collision");
 		if (_col.gameObject.CompareTag ("Bullet")) {
+			Debug.Log ("collision");
 			BLife--;
 		}
 	}
