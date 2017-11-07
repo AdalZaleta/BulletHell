@@ -32,11 +32,9 @@ public class WaveMovesBullet : MonoBehaviour {
 			K -= 360;
 		}
 			
-		head.transform.position = new Vector3 (Mathf.Sin (K * Mathf.PI / 180) * Amplitud, gameObject.transform.position.y, 0);
-		tail1.transform.position = new Vector3 (Mathf.Sin ((K-60) * Mathf.PI / 180) * Amplitud, gameObject.transform.position.y+offset1, 0);
-		tail2.transform.position = new Vector3 (Mathf.Sin ((K - 120) * Mathf.PI / 180) * Amplitud,gameObject.transform.position.y +offset2, 0);
-
-
+		head.transform.position = new Vector3 (gameObject.transform.position.x + Mathf.Sin (K * Mathf.PI / 180) * Amplitud, gameObject.transform.position.y, 0);
+		tail1.transform.position = new Vector3 (gameObject.transform.position.x + Mathf.Sin ((K-60) * Mathf.PI / 180) * Amplitud, gameObject.transform.position.y+offset1, 0);
+		tail2.transform.position = new Vector3 (gameObject.transform.position.x + Mathf.Sin ((K - 120) * Mathf.PI / 180) * Amplitud,gameObject.transform.position.y +offset2, 0);
 
 	}
 }
