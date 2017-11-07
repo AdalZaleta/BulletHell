@@ -9,48 +9,48 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1093736971778902}
+  m_RootGameObject: {fileID: 1328745114531954}
   m_IsPrefabParent: 1
---- !u!1 &1093736971778902
+--- !u!1 &1328745114531954
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4669984583627940}
-  - component: {fileID: 212463496969709378}
-  - component: {fileID: 95617909854735356}
+  - component: {fileID: 4685928991430328}
+  - component: {fileID: 212487406525838254}
+  - component: {fileID: 95552332748663506}
   m_Layer: 0
-  m_Name: explosion-sprite-sheet_0
+  m_Name: Exprosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4669984583627940
+--- !u!4 &4685928991430328
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1093736971778902}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.76, y: -2.12, z: 0}
+  m_GameObject: {fileID: 1328745114531954}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.13, y: -4.13, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &95617909854735356
+--- !u!95 &95552332748663506
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1093736971778902}
+  m_GameObject: {fileID: 1328745114531954}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5dec5fca137437f46be28f476c730969, type: 2}
+  m_Controller: {fileID: 9100000, guid: c607451e6c697a545a135b2e9d06554f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -58,12 +58,12 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!212 &212463496969709378
+--- !u!212 &212487406525838254
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1093736971778902}
+  m_GameObject: {fileID: 1328745114531954}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0

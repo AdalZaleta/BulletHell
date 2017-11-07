@@ -7,7 +7,8 @@ public class Disparos : MonoBehaviour {
 	public bool puedo = true;
 	public float delay, veldis;
 	public GameObject DisparoIzq, DisparoIzqx, DisparoDer, DisparoDerx ,DisparoCen;
-	public GameObject bala, rayol;
+	public GameObject[] bala;
+	public GameObject rayol;
 	public int Modo;
 	List<GameObject> poolDisparo = new List<GameObject> ();
 
@@ -25,7 +26,7 @@ public class Disparos : MonoBehaviour {
 		}
 		//Si llega a salir del for, significa que no hay cubos disponibles
 		//Entonces genero uno nuevo
-		GameObject nuevoDisparo = Instantiate (bala) as GameObject;
+		GameObject nuevoDisparo = Instantiate (bala[0]) as GameObject;
 		//Lo agreagamos al pool
 		nuevoDisparo.transform.position = _pos;
 		poolDisparo.Add (nuevoDisparo);
@@ -34,6 +35,10 @@ public class Disparos : MonoBehaviour {
 
 	void Update ()
 	{
+		if (Input.GetKeyDown (KeyCode.Keypad8))
+			veldis += 10;
+		if (Input.GetKeyDown (KeyCode.Keypad2))
+			veldis -= 10;
 		if (Input.GetKeyDown (KeyCode.Alpha1))
 			Modo = 1;
 		if (Input.GetKeyDown (KeyCode.Alpha2))
