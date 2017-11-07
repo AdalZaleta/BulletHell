@@ -6,20 +6,19 @@ public class Shoot : MonoBehaviour {
 
 	float framecount = 0;
 	public GameObject pivot;
-	public GameObject player;
+	GameObject player;
 	bool tilt = false;
 	public bool Trigger_Circle;
 	public bool Trigger_Spiral;
 
 	// Use this for initialization
 	void Start () {
-		
+		player = GameObject.FindGameObjectWithTag ("Player");
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-
 		framecount += 0.2f;
 
 		if (Input.GetKey (KeyCode.K)) {
@@ -79,8 +78,11 @@ public class Shoot : MonoBehaviour {
 
 	public void Shoot_Heatseak ()
 	{
-		LookAt2D (pivot.transform, player.transform.position, 0);
-		StartCoroutine (Burst ());
+		if (player)
+		{
+			LookAt2D (pivot.transform, player.transform.position, 0);
+			StartCoroutine (Burst ());
+		}
 	}
 
 	void LookAt2D(Transform _transform, Vector3 _pos, float _offset)

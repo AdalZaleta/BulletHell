@@ -9,6 +9,8 @@ public class BulletPool : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		cnt = 0;
+		bulletPool = new List<GameObject> ();
 		bulletPool.Add (gameObject);
 	}
 

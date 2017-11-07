@@ -10,12 +10,30 @@ public class movementtest : MonoBehaviour {
 	float offsetX;
 	float offsetY;
 
+	public float Xmin;
+	public float Xmax;
+	public float Ymin;
+	public float Ymax;
+
 	RaycastHit2D hit;
 	Vector2 Touchpos;
 
+	void OnTriggerEnter2D (Collider2D _col)
+	{
+		if (_col.gameObject.CompareTag ("Bullet"))
+		{
+			Destroy (gameObject);
+		}
+	}
+
 	// Use this for initialization
 	void Start () {
-		
+		Vector2 corner = Camera.main.ScreenToWorldPoint (Vector3.zero);
+
+		Xmin = corner.x;
+		Xmax = -corner.x;
+		Ymin = corner.y;
+		Ymax = -corner.y;
 	}
 	
 	// Update is called once per frame
@@ -33,6 +51,14 @@ public class movementtest : MonoBehaviour {
 			Vector3 TruePos = new Vector3(Touchpos.x + offsetX, Touchpos.y + offsetY, 0.0f);
 
 			transform.position = TruePos;
+			if (transform.position.x <= Xmin)
+				transform.position = new Vector3(Xmin, transform.position.y, 0.0f);
+			if (transform.position.x >= Xmax)
+				transform.position = new Vector3(Xmax, transform.position.y, 0.0f);
+			if (transform.position.y <= Ymin)
+				transform.position = new Vector3(transform.position.x, Ymin, 0.0f);
+			if (transform.position.y >= Ymax)
+				transform.position = new Vector3(transform.position.x, Ymax, 0.0f);
 		}
 		else
 		{

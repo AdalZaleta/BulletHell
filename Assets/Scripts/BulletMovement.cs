@@ -21,7 +21,8 @@ public class BulletMovement : MonoBehaviour {
 
 	void OnDisable()
 	{
-		gameObject.transform.position = pivot.transform.position;
+		if (pivot)
+			gameObject.transform.position = pivot.transform.position;
 	}
 
 	
