@@ -7,7 +7,7 @@ public class Cam : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		Screen.orientation = ScreenOrientation.Portrait;
 	}
 	
 	// Update is called once per frame
