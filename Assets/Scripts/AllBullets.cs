@@ -5,6 +5,7 @@ using UnityEngine;
 public class AllBullets : MonoBehaviour {
 
 	public GameObject debris;
+	public float Damage;
 
 	void OnCollisionEnter2D(Collision2D _col)
 	{
