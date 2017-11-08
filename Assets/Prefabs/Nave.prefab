@@ -71,7 +71,7 @@ GameObject:
   - component: {fileID: 33975973947401900}
   - component: {fileID: 65682313247045180}
   - component: {fileID: 23016036162139924}
-  - component: {fileID: 114490833336782120}
+  - component: {fileID: 114353582308116762}
   - component: {fileID: 114467366894821098}
   m_Layer: 0
   m_Name: Nave
@@ -254,7 +254,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1181113420038662}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.09, y: -4.15, z: 0}
+  m_LocalPosition: {x: 0, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4646223255492394}
@@ -293,7 +293,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 44205c6648c8f1649981120cb80e0a3c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -410,6 +410,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114353582308116762
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1181113420038662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa9d5282170dcf54cb570e093cb6e938, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mask:
+    serializedVersion: 2
+    m_Bits: 0
+  cam: {fileID: 0}
+  Xmin: 0
+  Xmax: 0
+  Ymin: 0
+  Ymax: 0
+  HP: 3
 --- !u!114 &114467366894821098
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -433,15 +453,3 @@ MonoBehaviour:
   - {fileID: 1338319580170262, guid: 064f93d3d4e2a4f4dbf92172231f19af, type: 2}
   rayol: {fileID: 1076873257889454}
   Modo: 1
---- !u!114 &114490833336782120
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1181113420038662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5abc7537b2da48488aa168def9c85cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Velocidad: 0.1

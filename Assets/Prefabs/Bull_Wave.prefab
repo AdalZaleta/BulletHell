@@ -79,7 +79,7 @@ GameObject:
   - component: {fileID: 114233464665155866}
   - component: {fileID: 50629310928365444}
   m_Layer: 0
-  m_Name: WaveBullet
+  m_Name: Bull_Wave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

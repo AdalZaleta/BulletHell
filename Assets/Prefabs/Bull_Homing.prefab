@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 50103680533955852}
   - component: {fileID: 114523701645428040}
   m_Layer: 0
-  m_Name: HomingBullet
+  m_Name: Bull_Homing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
