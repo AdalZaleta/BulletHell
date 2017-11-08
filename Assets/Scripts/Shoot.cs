@@ -5,6 +5,7 @@ using UnityEngine;
 public class Shoot : MonoBehaviour {
 
 	float framecount = 0;
+	float framecountS = 0;
 	public GameObject pivot;
 	GameObject player;
 	bool tilt = false;
@@ -19,6 +20,7 @@ public class Shoot : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
+		framecountS += 0.2f;
 		framecount += 0.2f;
 
 		if (Input.GetKey (KeyCode.K)) {
@@ -34,7 +36,7 @@ public class Shoot : MonoBehaviour {
 		}
 
 		if (Trigger_Spiral) {
-			if (framecount >= 1.5) {
+			if (framecountS >= 0.8) {
 				pivot.transform.Rotate (Vector3.forward * 10);
 				for (int i = 0; i < 4; i++) {
 					pivot.transform.Rotate (0.0f, 0.0f, 90.0f * i);
@@ -60,6 +62,8 @@ public class Shoot : MonoBehaviour {
 			}
 		}
 
+		if (framecountS >= 0.8)
+			framecountS = 0;
 		if (framecount >= 1.5)
 			framecount = 0;
 	}
