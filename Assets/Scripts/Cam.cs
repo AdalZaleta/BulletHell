@@ -9,7 +9,7 @@ public class Cam : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		SceneManager.LoadSceneAsync ("HUD", LoadSceneMode.Additive);
+		SceneManager.LoadSceneAsync ("LoadScreen", LoadSceneMode.Additive);
 		Screen.orientation = ScreenOrientation.Portrait;
 		player = GameObject.FindGameObjectWithTag ("Player");
 	}
