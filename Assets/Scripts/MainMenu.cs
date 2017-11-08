@@ -30,7 +30,7 @@ public class MainMenu : MonoBehaviour {
 
 	public void Play()
 	{
-		SceneManager.LoadScene ("InGame");
+		SceneManager.LoadScene ("Game");
 	}
 
 	public void Options()

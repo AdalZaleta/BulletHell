@@ -15,6 +15,8 @@ public class movementtest : MonoBehaviour {
 	public float Ymin;
 	public float Ymax;
 
+	public int HP = 3;
+
 	RaycastHit2D hit;
 	Vector2 Touchpos;
 
@@ -22,7 +24,9 @@ public class movementtest : MonoBehaviour {
 	{
 		if (_col.gameObject.CompareTag ("Bullet"))
 		{
-			Destroy (gameObject);
+			HP--;
+			gameObject.GetComponent <CircleCollider2D>().enabled = false;
+			gameObject.SetActive (false);
 		}
 	}
 
@@ -64,10 +68,5 @@ public class movementtest : MonoBehaviour {
 		{
 			setPivot = false;
 		}
-	}
-
-	void MovePlayer()
-	{
-		
 	}
 }
