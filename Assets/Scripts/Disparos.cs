@@ -45,7 +45,7 @@ public class Disparos : MonoBehaviour {
 			Modo = 2;
 		if (Input.GetKeyDown (KeyCode.Alpha3))
 			Modo = 3;
-		if (InputMobileManager.GetTouch () && puedo && Modo == 1)
+		if (Input.touchCount > 0 && puedo && Modo == 1)
 		{
 			GameObject go = GenerarBala (DisparoIzq.gameObject.transform.position);
 			GameObject go1 = GenerarBala (DisparoDer.gameObject.transform.position);
@@ -54,7 +54,7 @@ public class Disparos : MonoBehaviour {
 			puedo = false;
 			StartCoroutine (Disparar ());
 		}
-		if (InputMobileManager.GetTouch () && puedo && Modo == 2)
+		if (Input.touchCount > 0 && puedo && Modo == 2)
 		{
 			GameObject go = GenerarBala (DisparoIzq.gameObject.transform.position);
 			GameObject go1 = GenerarBala (DisparoDer.gameObject.transform.position);
@@ -67,7 +67,7 @@ public class Disparos : MonoBehaviour {
 			puedo = false;
 			StartCoroutine (Disparar ());
 		}
-		if (InputMobileManager.GetTouch () && puedo && Modo == 3)
+		if (Input.touchCount > 0 && puedo && Modo == 3)
 		{
 			rayol.gameObject.GetComponent<Renderer> ().enabled = true;
 			rayol.gameObject.GetComponent<BoxCollider2D> ().enabled = true;
