@@ -21,7 +21,7 @@ public class Enemy1 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		deathtimer = startdelay + moveTime + 1.0f;
+		deathtimer = startdelay + moveTime + stayTime + 1.0f;
 		Destroy (gameObject, deathtimer);
 		if (goTo.Length != 0)
 			StartCoroutine (Goto ());

@@ -27,8 +27,8 @@ public class Shoot : MonoBehaviour {
 			{
 				//Si esta desactivadp, significa que puedo reciclarlo
 				poolDisparo [i].transform.position = _pos;
-				poolDisparo[i].transform.rotation = _rot.rotation;
-				poolDisparo[i].SetActive (true);
+				poolDisparo [i].transform.rotation = _rot.rotation;
+				poolDisparo [i].SetActive (true);
 				return poolDisparo [i];//Regreso el GameObject
 			}
 		}
@@ -37,6 +37,7 @@ public class Shoot : MonoBehaviour {
 		GameObject nuevoDisparo = Instantiate (bullet) as GameObject;
 		//Lo agreagamos al pool
 		nuevoDisparo.transform.position = _pos;
+		nuevoDisparo.transform.rotation = _rot.rotation;
 		poolDisparo.Add (nuevoDisparo);
 		return nuevoDisparo;
 	}
@@ -71,7 +72,7 @@ public class Shoot : MonoBehaviour {
 				for (int i = 0; i < 4; i++) {
 					pivot.transform.Rotate (0.0f, 0.0f, 90.0f * i);
 					GameObject go = GenerarBala (pivot.transform.position, pivot.transform);
-					go.GetComponent<Rigidbody2D> ().AddForce (Vector2.up * veldis);
+					go.GetComponent<Rigidbody2D> ().AddRelativeForce (Vector2.up * veldis);
 					canshoot = false;
 					StartCoroutine (Disparar ());
 				}
@@ -91,7 +92,7 @@ public class Shoot : MonoBehaviour {
 				for (int i = 0; i < 16; i++) {
 					pivot.transform.Rotate (0.0f, 0.0f, (360.0f / 16.0f) * i);
 					GameObject go = GenerarBala (pivot.transform.position, pivot.transform);
-					go.GetComponent<Rigidbody2D> ().AddForce (Vector2.up * veldis);
+					go.GetComponent<Rigidbody2D> ().AddRelativeForce (Vector2.up * veldis);
 					canshoot = false;
 					StartCoroutine (Disparar ());
 				}
@@ -122,17 +123,17 @@ public class Shoot : MonoBehaviour {
 	IEnumerator Burst()
 	{
 		GameObject go = GenerarBala (pivot.transform.position, pivot.transform);
-		go.GetComponent<Rigidbody2D> ().AddForce (Vector2.up * veldis);
+		go.GetComponent<Rigidbody2D> ().AddRelativeForce (Vector2.up * veldis);
 		canshoot = false;
 		StartCoroutine (Disparar ());
 		yield return new WaitForSeconds (0.1f);
 		GameObject go1 = GenerarBala (pivot.transform.position, pivot.transform);
-		go1.GetComponent<Rigidbody2D> ().AddForce (Vector2.up * veldis);
+		go1.GetComponent<Rigidbody2D> ().AddRelativeForce (Vector2.up * veldis);
 		canshoot = false;
 		StartCoroutine (Disparar ());
 		yield return new WaitForSeconds (0.1f);
 		GameObject go2 = GenerarBala (pivot.transform.position, pivot.transform);
-		go2.GetComponent<Rigidbody2D> ().AddForce (Vector2.up * veldis);
+		go2.GetComponent<Rigidbody2D> ().AddRelativeForce (Vector2.up * veldis);
 		canshoot = false;
 		StartCoroutine (Disparar ());
 	}
