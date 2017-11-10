@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class PowerUpSpawner : MonoBehaviour {
 
-	public GameObject PU_D;
-	public GameObject PU_L;
-	public GameObject PU_S;
-	public GameObject PU_Q;
 	public GameObject[] PowerUps;
 	public Transform[] spawner;
 	List<GameObject> prefabList = new List<GameObject> ();

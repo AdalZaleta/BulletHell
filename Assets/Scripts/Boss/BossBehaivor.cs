@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class BossBehaivor : MonoBehaviour {
 
+	public Transform target;
+	public float spawndelay;
 	public GameObject EyeCannonR, EyeCannonL, HandCannonR, HandCannonL, rightNip, leftNip;
 	public float TotalHP;
 	public float StartingHP;
 	// Use this for initialization
 	void Start () {
+		StartCoroutine (Spawn ());
+
 		for (int i = 0; i < GetComponentsInChildren<BossParts> ().Length; i++) {
 			StartingHP += GetComponentsInChildren<BossParts> () [i].HP;
 		}
@@ -63,5 +67,11 @@ public class BossBehaivor : MonoBehaviour {
 			leftNip.GetComponent<Shoot> ().shootstyle = 2;
 			HandCannonL.GetComponent<Shoot> ().shootstyle = 0;
 		}
+	}
+
+	IEnumerator Spawn()
+	{
+		yield return new WaitForSeconds (spawndelay);
+		LeanTween.move (gameObject, target.position, 5.0f);
 	}
 }
