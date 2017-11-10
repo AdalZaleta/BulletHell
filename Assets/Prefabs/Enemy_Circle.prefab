@@ -163,6 +163,7 @@ MeshRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &33024309848484578
 MeshFilter:
@@ -182,9 +183,20 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
+  m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!82 &82684029253860840
 AudioSource:
   m_ObjectHideFlags: 1
@@ -301,7 +313,7 @@ MonoBehaviour:
   - {fileID: 4121528505421336}
   bezier: []
   moveTime: 1
-  stayTime: 10
+  stayTime: 5
   curveTime: 0
   startdelay: 4
   AS: {fileID: 82684029253860840}
