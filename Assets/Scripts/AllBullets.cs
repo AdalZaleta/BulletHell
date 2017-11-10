@@ -13,12 +13,19 @@ public class AllBullets : MonoBehaviour {
 			DeletThis ();
 		}
 	}
-
+	void OnEnable () 
+	{
+		Invoke ("DeletThis", 1f);
+	}
 	public void DeletThis()
 	{
 		if (debris != null) {
 			Instantiate (debris, new Vector3 (transform.position.x, transform.position.y, 0), Quaternion.identity);
 		}
 		gameObject.SetActive (false);
+	}
+	void OnDisable ()
+	{
+		gameObject.GetComponent <Rigidbody2D> ().velocity = Vector2.zero;
 	}
 }
