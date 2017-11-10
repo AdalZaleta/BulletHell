@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Balas
+  - Bullet
+  - P_bullet
   layers:
   - Default
   - TransparentFX

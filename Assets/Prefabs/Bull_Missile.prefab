@@ -9,47 +9,48 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1269582909027718}
+  m_RootGameObject: {fileID: 1792132034596030}
   m_IsPrefabParent: 1
---- !u!1 &1269582909027718
+--- !u!1 &1792132034596030
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4444958645046684}
-  - component: {fileID: 33116938987682876}
-  - component: {fileID: 23390645149355672}
-  - component: {fileID: 58620867061136388}
-  - component: {fileID: 50103680533955852}
-  - component: {fileID: 114523701645428040}
+  - component: {fileID: 4841461546551432}
+  - component: {fileID: 33334293218791260}
+  - component: {fileID: 23078567113483574}
+  - component: {fileID: 50348548299894904}
+  - component: {fileID: 114231861553029084}
+  - component: {fileID: 114007990403903344}
+  - component: {fileID: 58185051962718454}
   m_Layer: 0
-  m_Name: HomingBullet
+  m_Name: Bull_Missile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4444958645046684
+--- !u!4 &4841461546551432
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1269582909027718}
+  m_GameObject: {fileID: 1792132034596030}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.1, y: -1.82, z: 0}
+  m_LocalPosition: {x: 0, y: -3.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23390645149355672
+--- !u!23 &23078567113483574
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1269582909027718}
+  m_GameObject: {fileID: 1792132034596030}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -76,20 +77,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33116938987682876
+--- !u!33 &33334293218791260
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1269582909027718}
+  m_GameObject: {fileID: 1792132034596030}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!50 &50103680533955852
+--- !u!50 &50348548299894904
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1269582909027718}
+  m_GameObject: {fileID: 1792132034596030}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -103,12 +104,12 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &58620867061136388
+--- !u!58 &58185051962718454
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1269582909027718}
+  m_GameObject: {fileID: 1792132034596030}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -118,16 +119,52 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &114523701645428040
+--- !u!114 &114007990403903344
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1269582909027718}
+  m_GameObject: {fileID: 1792132034596030}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae07e07863306554aa4cee4c9cc90a27, type: 3}
+  m_Script: {fileID: 11500000, guid: bbdeb46e71fc3d64cb55b3793d088cfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  Velocidad: 2
+  debris: {fileID: 1093736971778902, guid: 08fb28deae5d1ab4d9705889c8638505, type: 2}
+--- !u!114 &114231861553029084
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1792132034596030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 756be5709c7637748adef98fd7276154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curva:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: -0.11666489
+      value: 0
+      inSlope: -0.23029739
+      outSlope: -0.23029739
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.48717633
+      value: -0.00051740557
+      inSlope: 0.6545123
+      outSlope: 0.6545123
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0.9937439
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  Escala: 20
+  aceleracion: 1
