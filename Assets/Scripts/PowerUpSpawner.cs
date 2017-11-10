@@ -8,6 +8,7 @@ public class PowerUpSpawner : MonoBehaviour {
 	public GameObject PU_L;
 	public GameObject PU_S;
 	public GameObject PU_Q;
+
 	public GameObject[] PowerUps;
 	public Transform[] spawner;
 	List<GameObject> prefabList = new List<GameObject> ();
@@ -18,7 +19,11 @@ public class PowerUpSpawner : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+		prefabList.Add (PU_D);
+		prefabList.Add (PU_L);
+		prefabList.Add (PU_S);
+		prefabList.Add (PU_Q);
+		prefabIndex = UnityEngine.Random.Range (0, prefabList.Count-1);
 	}
 	
 	// Update is called once per frame
@@ -27,7 +32,7 @@ public class PowerUpSpawner : MonoBehaviour {
 		{
 			if (framecount >= spawntimes[i] && framecount < spawntimes[i]+0.1f)
 			{
-				Instantiate (PowerUps[i], spawner[i].position, spawner[i].rotation);
+				Instantiate (prefabList[prefabIndex], spawner[i].position, spawner[i].rotation);
 				prefabIndex = UnityEngine.Random.Range (0, prefabList.Count-1);
 			}
 		}
