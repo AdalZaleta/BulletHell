@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PowerUps : MonoBehaviour {
-	public int Vida;
+
 	public int EscudoLife;
 	public bool Rayo;
 	public bool Explosion = false;
@@ -11,16 +11,12 @@ public class PowerUps : MonoBehaviour {
 	public bool quadShot = false;
 
 	void Start () {
-		Vida = 3;
 		EscudoLife = 10;
 		gameObject.transform.GetChild (0).GetComponent<MeshRenderer> ().enabled = false;
 	}
+
 	void Update()
 	{
-		if(Vida == 0)
-		{
-			Destroy (this.gameObject);
-		}
 		if (EscudoLife == 0) {
 			gameObject.transform.GetChild (0).GetComponent<MeshRenderer> ().enabled = false;
 			EscudoLife = 10;
@@ -32,12 +28,7 @@ public class PowerUps : MonoBehaviour {
 		//Checa si el escudo está activo
 		if (gameObject.transform.GetChild (0).GetComponent<MeshRenderer> ().enabled) {
 			//Checa si choca con alguna bala ENEMIGA
-			if (_col.gameObject.CompareTag ("EBullet")) {
-				Destroy (_col.gameObject);
-			}
-		} else {
-			if (_col.gameObject.CompareTag ("EBullet")) {
-				Vida--;
+			if (_col.gameObject.CompareTag ("Bullet")) {
 				Destroy (_col.gameObject);
 			}
 		}
