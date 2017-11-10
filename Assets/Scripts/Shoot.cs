@@ -140,7 +140,7 @@ public class Shoot : MonoBehaviour {
 
 	IEnumerator Disparar()
 	{
-		yield return new WaitForSeconds (Time.deltaTime * delay);
+		yield return new WaitForSeconds (delay);
 		canshoot = true;
 	}
 }
