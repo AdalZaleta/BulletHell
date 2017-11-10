@@ -33,6 +33,11 @@ public class Disparos : MonoBehaviour {
 		return nuevoDisparo;
 	}
 
+	void OnEnable ()
+	{
+		puedo = true;
+	}
+
 	void Update ()
 	{
 		if (Input.touchCount > 0 && puedo && Modo == 1)

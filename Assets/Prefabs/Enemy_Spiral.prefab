@@ -213,7 +213,7 @@ MonoBehaviour:
   - {fileID: 4509551264478440}
   bezier: []
   moveTime: 2
-  stayTime: 1
+  stayTime: 10
   curveTime: 0
   startdelay: 4
 --- !u!114 &114258142430652148
@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootstyle: 1
-  delay: 1
+  delay: 0.07
   veldis: 500
   pivot: {fileID: 1195742695147548}
   bullet: {fileID: 1870821078268958, guid: bc10b3877d1f5064daec643105b0639f, type: 2}
