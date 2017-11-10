@@ -436,6 +436,20 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
+  m_FalloffTable:
+    m_Table[0]: 0
+    m_Table[1]: 0
+    m_Table[2]: 0
+    m_Table[3]: 0
+    m_Table[4]: 0
+    m_Table[5]: 0
+    m_Table[6]: 0
+    m_Table[7]: 0
+    m_Table[8]: 0
+    m_Table[9]: 0
+    m_Table[10]: 0
+    m_Table[11]: 0
+    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -626,7 +640,7 @@ MonoBehaviour:
   - {fileID: 1933554393729982, guid: b2fba1fc98e7317459bbab4e181107d5, type: 2}
   - {fileID: 1855761445684508, guid: c69cfc303f105994ba56f3a74bc2dc6b, type: 2}
   - {fileID: 1964240842365746, guid: ebd570b549e2d86489b4b7aeced98fd1, type: 2}
-  - {fileID: 1942003724321904, guid: 6688d1c0f3965234da1bb6be7499972d, type: 2}
+  - {fileID: 1942003724321904, guid: 893cd0cf1a0371a4e86eb27ed9542a7c, type: 2}
   positions:
   - {x: -4, y: 4, z: 0}
   - {x: -4, y: 4, z: 0}
