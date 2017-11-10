@@ -252,7 +252,7 @@ Prefab:
     - target: {fileID: 23019771801025344, guid: 0b75cd8156a0b124d9908ac98ff04a74,
         type: 2}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4402049766541828, guid: 0b75cd8156a0b124d9908ac98ff04a74, type: 2}
       propertyPath: m_LocalScale.y
