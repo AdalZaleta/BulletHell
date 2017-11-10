@@ -366,7 +366,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1550378804083810}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.5099895, y: 1.0924264, z: 0}
+  m_LocalPosition: {x: 2.5174818, y: 0.8750456, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4875163170828278}
@@ -2522,7 +2522,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1125470899486850}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfecaa3d7cd0a3e4a8388ecdd19bf523, type: 3}
+  m_Script: {fileID: 11500000, guid: ee4f1dbc553c1564a82b8a3fdf9ab923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   HP: 10
@@ -2583,7 +2583,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1731006747670654}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfecaa3d7cd0a3e4a8388ecdd19bf523, type: 3}
+  m_Script: {fileID: 11500000, guid: ee4f1dbc553c1564a82b8a3fdf9ab923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   HP: 10
@@ -2596,7 +2596,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1550378804083810}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: daf694bd93293b444b8659510384b79d, type: 3}
+  m_Script: {fileID: 11500000, guid: c08da4474fcacb245bd2054f2e16899c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   EyeCannonR: {fileID: 1882637951700714}
@@ -2615,7 +2615,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1450682128779580}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfecaa3d7cd0a3e4a8388ecdd19bf523, type: 3}
+  m_Script: {fileID: 11500000, guid: ee4f1dbc553c1564a82b8a3fdf9ab923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   HP: 10
@@ -2677,7 +2677,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1994257231198860}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfecaa3d7cd0a3e4a8388ecdd19bf523, type: 3}
+  m_Script: {fileID: 11500000, guid: ee4f1dbc553c1564a82b8a3fdf9ab923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   HP: 10
@@ -2706,7 +2706,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1986491903504244}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfecaa3d7cd0a3e4a8388ecdd19bf523, type: 3}
+  m_Script: {fileID: 11500000, guid: ee4f1dbc553c1564a82b8a3fdf9ab923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   HP: 10
@@ -2719,7 +2719,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1220315656242720}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfecaa3d7cd0a3e4a8388ecdd19bf523, type: 3}
+  m_Script: {fileID: 11500000, guid: ee4f1dbc553c1564a82b8a3fdf9ab923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   HP: 10
@@ -2764,6 +2764,8 @@ SpriteRenderer:
   m_Size: {x: 9.46, y: 4.08}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!212 &212031099737985922
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -2804,6 +2806,8 @@ SpriteRenderer:
   m_Size: {x: 5.74, y: 8.93}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!212 &212089528399155664
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -2844,6 +2848,8 @@ SpriteRenderer:
   m_Size: {x: 4.68, y: 6.77}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!212 &212341379073783484
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -2884,6 +2890,8 @@ SpriteRenderer:
   m_Size: {x: 3.93, y: 4.27}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!212 &212577272447251850
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -2924,6 +2932,8 @@ SpriteRenderer:
   m_Size: {x: 3.05, y: 2.29}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!212 &212685491641035466
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -2964,6 +2974,8 @@ SpriteRenderer:
   m_Size: {x: 3.03, y: 7.59}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!212 &212860852934926650
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -3004,3 +3016,5 @@ SpriteRenderer:
   m_Size: {x: 9.79, y: 2.38}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
