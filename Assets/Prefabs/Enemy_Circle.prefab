@@ -223,7 +223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ad385f94a1a9f44d9de9d5381e98bf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 20
+  HP: 50
   goTo:
   - {fileID: 4965674611742062}
   - {fileID: 4121528505421336}
