@@ -6,6 +6,7 @@ public class BossParts : MonoBehaviour {
 
 	public float HP;
 	public float Armor;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -15,11 +16,12 @@ public class BossParts : MonoBehaviour {
 	void Update () {
 		
 	}
-
-	void OnTriggerEnter2D(Collider2D _col)
+	void OnTriggerEnter(Collider _col)
 	{
-		if (_col.CompareTag ("Bullet")) {
-			
+		if(_col.CompareTag("P_bullet"))
+		{
+			HP -= _col.GetComponent<AllBullets> ().Damage * Armor;
 		}
 	}
+
 }
