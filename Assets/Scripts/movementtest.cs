@@ -22,12 +22,15 @@ public class movementtest : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D _col)
 	{
-		if (_col.gameObject.CompareTag ("Bullet"))
+		if (gameObject.CompareTag ("Player"))
 		{
-			HP--;
-			gameObject.GetComponent <CircleCollider2D>().enabled = false;
-			gameObject.SetActive (false);
-			cam.GetComponent <Cam>().callBlink ();
+			if (_col.gameObject.CompareTag ("Bullet"))
+			{
+				HP--;
+				gameObject.GetComponent <CircleCollider2D>().enabled = false;
+				gameObject.SetActive (false);
+				cam.GetComponent <Cam>().callBlink ();
+			}
 		}
 	}
 

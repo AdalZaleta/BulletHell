@@ -12,13 +12,15 @@ public class PowerUps : MonoBehaviour {
 
 	void Start () {
 		EscudoLife = 10;
-		gameObject.transform.GetChild (0).GetComponent<MeshRenderer> ().enabled = false;
+		gameObject.transform.GetChild (0).GetComponent <MeshRenderer> ().enabled = false;
+		gameObject.transform.GetChild (0).GetComponent <CircleCollider2D> ().enabled = false;
 	}
 
 	void Update()
 	{
 		if (EscudoLife == 0) {
 			gameObject.transform.GetChild (0).GetComponent<MeshRenderer> ().enabled = false;
+			gameObject.transform.GetChild (0).GetComponent <CircleCollider2D> ().enabled = false;
 			EscudoLife = 10;
 		}
 	}
@@ -35,6 +37,7 @@ public class PowerUps : MonoBehaviour {
 
 		if (_col.gameObject.CompareTag ("PowerUp_Escudo")) {
 			gameObject.transform.GetChild (0).GetComponent<MeshRenderer> ().enabled = true;
+			gameObject.transform.GetChild (0).GetComponent <CircleCollider2D> ().enabled = true;
 			Destroy (_col.gameObject);
 		}
 		if (_col.gameObject.CompareTag ("PowerUp_Rayo")) {
