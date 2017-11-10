@@ -5,7 +5,7 @@ using UnityEngine;
 public class Enemy_Spawner : MonoBehaviour {
 
 	public GameObject[] enemies;
-	public Vector3[] positions;
+	public Transform[] pivot;
 	public float[] spawntimes;
 	public float framecount;
 
@@ -20,7 +20,7 @@ public class Enemy_Spawner : MonoBehaviour {
 		{
 			if (framecount >= spawntimes[i] && framecount < spawntimes[i]+0.1f)
 			{
-				Instantiate (enemies[i], positions[i], Quaternion.identity);
+				Instantiate (enemies[i], pivot[i].position, pivot[i].rotation);
 			}
 		}
 
