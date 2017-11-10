@@ -6,7 +6,7 @@ public class Debris : MonoBehaviour {
 
 	Animator anim;
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		anim = gameObject.GetComponent<Animator> ();
 	}
 

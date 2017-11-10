@@ -10,7 +10,7 @@ public class AllBullets : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D _col)
 	{
-		if (_col.gameObject.CompareTag ("Wall")) {
+		if (_col.gameObject.CompareTag (gameObject.tag) == false) {
 			DeletThis ();
 		}
 	}
