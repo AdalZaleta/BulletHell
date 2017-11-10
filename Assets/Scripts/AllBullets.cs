@@ -21,4 +21,9 @@ public class AllBullets : MonoBehaviour {
 		}
 		gameObject.SetActive (false);
 	}
+
+	void OnDisable ()
+	{
+		gameObject.GetComponent <Rigidbody2D> ().velocity = Vector2.zero;
+	}
 }
