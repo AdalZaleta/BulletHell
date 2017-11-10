@@ -20,7 +20,8 @@ public class Enemy_Spawner : MonoBehaviour {
 		{
 			if (framecount >= spawntimes[i] && framecount < spawntimes[i]+0.1f)
 			{
-				Instantiate (enemies[i], pivot[i].position, pivot[i].rotation);
+				if (enemies[i])
+					Instantiate (enemies[i], pivot[i].position, pivot[i].rotation);
 			}
 		}
 
