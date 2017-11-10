@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BossBehaivor : MonoBehaviour {
 
-	public GameObject EyeCannonR, EyeCannonL, HandCannonR, HandCannonL;
+	public GameObject EyeCannonR, EyeCannonL, HandCannonR, HandCannonL, rightNip, leftNip;
 	public float TotalHP;
 	public float StartingHP;
 	// Use this for initialization
@@ -25,6 +25,8 @@ public class BossBehaivor : MonoBehaviour {
 			EyeCannonR.GetComponent<Shoot> ().delay = 10;
 			HandCannonL.GetComponent<Shoot> ().delay = 10;
 			HandCannonR.GetComponent<Shoot> ().delay = 10;
+			rightNip.GetComponent<Shoot> ().delay = 10;
+			leftNip.GetComponent<Shoot> ().delay = 10;
 		}
 		else if(TotalHP > 0.6 * StartingHP)
 		{
@@ -32,6 +34,8 @@ public class BossBehaivor : MonoBehaviour {
 			EyeCannonR.GetComponent<Shoot> ().delay = 5;
 			HandCannonL.GetComponent<Shoot> ().delay = 5;
 			HandCannonR.GetComponent<Shoot> ().delay = 5;
+			rightNip.GetComponent<Shoot> ().delay = 10;
+			leftNip.GetComponent<Shoot> ().delay = 10;
 		}
 		else if(TotalHP > 0.4 * StartingHP)
 		{
@@ -39,6 +43,8 @@ public class BossBehaivor : MonoBehaviour {
 			EyeCannonR.GetComponent<Shoot> ().delay = 2;
 			HandCannonL.GetComponent<Shoot> ().delay = 2;
 			HandCannonR.GetComponent<Shoot> ().delay = 2;
+			rightNip.GetComponent<Shoot> ().delay = 10;
+			leftNip.GetComponent<Shoot> ().delay = 10;
 		}
 		else if(TotalHP > 0.2 * StartingHP)
 		{
@@ -46,6 +52,16 @@ public class BossBehaivor : MonoBehaviour {
 			EyeCannonR.GetComponent<Shoot> ().delay = 1;
 			HandCannonL.GetComponent<Shoot> ().delay = 1;
 			HandCannonR.GetComponent<Shoot> ().delay = 1;
+			rightNip.GetComponent<Shoot> ().delay = 10;
+			leftNip.GetComponent<Shoot> ().delay = 10;
+		}
+		if (HandCannonR.GetComponentInParent<BossParts> ().HP <= 0) {
+			rightNip.GetComponent<Shoot> ().shootstyle = 2;
+			HandCannonR.GetComponent<Shoot> ().shootstyle = 0;
+		}
+		if (HandCannonL.GetComponentInParent<BossParts> ().HP <= 0) {
+			leftNip.GetComponent<Shoot> ().shootstyle = 2;
+			HandCannonL.GetComponent<Shoot> ().shootstyle = 0;
 		}
 	}
 }
