@@ -11,6 +11,8 @@ public class Enemy1 : MonoBehaviour {
 	public float moveTime, stayTime, curveTime;
 	public float startdelay;
 	float deathtimer;
+	public AudioSource AS;
+	public AudioClip ReboteSFX;
 
 	float framecount;
 
@@ -19,6 +21,7 @@ public class Enemy1 : MonoBehaviour {
 		lasercount = 0;
 		if (_col.gameObject.CompareTag ("P_bullet"))
 			HP--;
+		AS.PlayOneShot (ReboteSFX);
 	}
 
 	void OnTriggerStay2D (Collider2D _col)
@@ -41,6 +44,7 @@ public class Enemy1 : MonoBehaviour {
 		StartCoroutine (activate(startdelay));
 		deathtimer = startdelay + moveTime + stayTime + 1.0f;
 		Destroy (gameObject, deathtimer);
+		AS = GetComponent<AudioSource> ();
 		if (goTo.Length != 0)
 			StartCoroutine (Goto ());
 		if (bezier.Length != 0)

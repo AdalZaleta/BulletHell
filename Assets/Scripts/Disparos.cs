@@ -10,8 +10,14 @@ public class Disparos : MonoBehaviour {
 	public GameObject[] bala;
 	public GameObject rayol;
 	public int Modo;
+	public AudioSource AS;
+	public AudioClip ShotSFX;
 	List<GameObject> poolDisparo = new List<GameObject> ();
 
+	void Start()
+	{
+		AS = GetComponent<AudioSource> ();
+	}
 	public GameObject GenerarBala(Vector3 _pos)
 	{
 		for(int i = 0; i < poolDisparo.Count; i++)
@@ -54,6 +60,7 @@ public class Disparos : MonoBehaviour {
 			go.GetComponent<Rigidbody2D> ().AddForce (Vector2.up * veldis);
 			go1.GetComponent<Rigidbody2D> ().AddForce (Vector2.up * veldis);
 			puedo = false;
+			AS.PlayOneShot(ShotSFX);
 			StartCoroutine (Disparar ());
 		}
 		if (Input.touchCount > 0 && puedo && Modo == 2)
@@ -67,6 +74,7 @@ public class Disparos : MonoBehaviour {
 			go2.GetComponent<Rigidbody2D> ().AddForce (Vector2.up * veldis);
 			go3.GetComponent<Rigidbody2D> ().AddForce (Vector2.up * veldis);
 			puedo = false;
+			AS.PlayOneShot(ShotSFX);
 			StartCoroutine (Disparar ());
 		}
 		if (Input.touchCount > 0 && puedo && Modo == 3)

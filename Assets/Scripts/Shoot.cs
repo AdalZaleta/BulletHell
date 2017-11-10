@@ -16,6 +16,9 @@ public class Shoot : MonoBehaviour {
 	public float delay, veldis;
 	public GameObject pivot;
 	public GameObject bullet;
+	public AudioSource AS;
+	public AudioClip EShotSFX;
+	public AudioClip PuuushSFX;
 	GameObject player;
 	List<GameObject> poolDisparo = new List<GameObject> ();
 
@@ -52,6 +55,7 @@ public class Shoot : MonoBehaviour {
 		Ymax = -corner.y;
 
 		player = GameObject.FindGameObjectWithTag ("Player");
+		AS = GetComponent<AudioSource> ();
 	}
 
 	void Update ()
@@ -75,6 +79,7 @@ public class Shoot : MonoBehaviour {
 					go.GetComponent<Rigidbody2D> ().AddRelativeForce (Vector2.up * veldis);
 					canshoot = false;
 					StartCoroutine (Disparar ());
+					AS.PlayOneShot (EShotSFX);
 				}
 			}
 		}
@@ -95,6 +100,7 @@ public class Shoot : MonoBehaviour {
 					go.GetComponent<Rigidbody2D> ().AddRelativeForce (Vector2.up * veldis);
 					canshoot = false;
 					StartCoroutine (Disparar ());
+					AS.PlayOneShot (EShotSFX);
 				}
 			}
 		}
@@ -122,6 +128,7 @@ public class Shoot : MonoBehaviour {
 
 	IEnumerator Burst()
 	{
+		AS.PlayOneShot (PuuushSFX);
 		GameObject go = GenerarBala (pivot.transform.position, pivot.transform);
 		go.GetComponent<Rigidbody2D> ().AddRelativeForce (Vector2.up * veldis);
 		canshoot = false;
