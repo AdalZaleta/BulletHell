@@ -397,16 +397,19 @@ MonoBehaviour:
   - {fileID: 1933554393729982, guid: b2fba1fc98e7317459bbab4e181107d5, type: 2}
   - {fileID: 1933554393729982, guid: b2fba1fc98e7317459bbab4e181107d5, type: 2}
   - {fileID: 1855761445684508, guid: c69cfc303f105994ba56f3a74bc2dc6b, type: 2}
+  - {fileID: 1964240842365746, guid: ebd570b549e2d86489b4b7aeced98fd1, type: 2}
   positions:
   - {x: -4, y: 4, z: 0}
   - {x: -4, y: 4, z: 0}
   - {x: -4, y: 4, z: 0}
+  - {x: 0, y: 6, z: 0}
   - {x: 0, y: 6, z: 0}
   spawntimes:
   - 0
   - 10
   - 20
   - 45
+  - 60
   framecount: 0
 --- !u!1 &1365825161
 GameObject:

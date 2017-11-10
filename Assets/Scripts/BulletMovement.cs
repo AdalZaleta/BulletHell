@@ -7,7 +7,7 @@ public class BulletMovement : MonoBehaviour {
 	// Use this for initialization
 	void OnEnable () 
 	{
-		Invoke ("Eliminar", 1f);
+		Invoke ("Eliminar", 2f);
 	}
 
 	void Eliminar()
