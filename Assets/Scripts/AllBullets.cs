@@ -13,7 +13,10 @@ public class AllBullets : MonoBehaviour {
 			DeletThis ();
 		}
 	}
-
+	void OnEnable () 
+	{
+		Invoke ("DeletThis", 1f);
+	}
 	public void DeletThis()
 	{
 		if (debris != null) {
