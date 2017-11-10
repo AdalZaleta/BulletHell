@@ -143,9 +143,4 @@ public class Shoot : MonoBehaviour {
 		yield return new WaitForSeconds (Time.deltaTime * delay);
 		canshoot = true;
 	}
-<<<<<<< HEAD
-=======
-
-
->>>>>>> BossBoi-Returns-from-the-dead
 }
