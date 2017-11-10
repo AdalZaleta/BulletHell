@@ -8,6 +8,13 @@ TagManager:
   - Bullet
   - P_bullet
   - Wall
+  - PowerUp_Escudo
+  - PowerUP_Rayo
+  - PowerUp_Explosion
+  - PowerUp_Escopeta
+  - PowerUp_quadShot
+  - PowerUp_Rayo
+  - Laser
   layers:
   - Default
   - TransparentFX
@@ -18,8 +25,8 @@ TagManager:
   - 
   - 
   - Balas
-  - 
-  - 
+  - Laser
+  - Bullets
   - 
   - 
   - 

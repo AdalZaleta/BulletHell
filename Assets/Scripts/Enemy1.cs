@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy1 : MonoBehaviour {
 
 	public float HP;
+	float lasercount;
 	public Transform[] goTo;
 	public Transform[] bezier;
 	public float moveTime, stayTime, curveTime;
@@ -15,8 +16,23 @@ public class Enemy1 : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D _col)
 	{
+		lasercount = 0;
 		if (_col.gameObject.CompareTag ("P_bullet"))
 			HP--;
+	}
+
+	void OnTriggerStay2D (Collider2D _col)
+	{
+		lasercount += 0.1f;
+		if (_col.gameObject.CompareTag ("Laser"))
+		{
+			if (lasercount >= 0.2f)
+			{	
+				HP--;
+			}
+		}
+		if (lasercount >= 0.2f)
+			lasercount = 0;
 	}
 
 	// Use this for initialization

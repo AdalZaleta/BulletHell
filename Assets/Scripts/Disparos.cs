@@ -40,6 +40,13 @@ public class Disparos : MonoBehaviour {
 
 	void Update ()
 	{
+		if (gameObject.GetComponent <PowerUps>().Escopeta == true)
+			Modo = 1;
+		if (gameObject.GetComponent <PowerUps>().quadShot == true)
+			Modo = 2;
+		if (gameObject.GetComponent <PowerUps>().Rayo == true)
+			Modo = 3;
+
 		if (Input.touchCount > 0 && puedo && Modo == 1)
 		{
 			GameObject go = GenerarBala (DisparoIzq.gameObject.transform.position);
