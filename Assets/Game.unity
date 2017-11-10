@@ -118,6 +118,7 @@ GameObject:
   - component: {fileID: 194334398}
   - component: {fileID: 194334397}
   - component: {fileID: 194334399}
+  - component: {fileID: 194334400}
   m_Layer: 0
   m_Name: Default
   m_TagString: PowerUp_Escopeta
@@ -205,6 +206,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.05, y: 1.05}
   m_EdgeRadius: 0
+--- !u!50 &194334400
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 194334396}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0.2
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &466012568
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,6 +434,7 @@ GameObject:
   - component: {fileID: 820121778}
   - component: {fileID: 820121777}
   - component: {fileID: 820121779}
+  - component: {fileID: 820121780}
   m_Layer: 0
   m_Name: Quadshot
   m_TagString: PowerUp_quadShot
@@ -500,6 +522,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.93, y: 4.27}
   m_EdgeRadius: 0
+--- !u!50 &820121780
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 820121776}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0.2
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &918104303
 GameObject:
   m_ObjectHideFlags: 0
@@ -1017,6 +1059,7 @@ GameObject:
   - component: {fileID: 1873941419}
   - component: {fileID: 1873941418}
   - component: {fileID: 1873941420}
+  - component: {fileID: 1873941421}
   m_Layer: 0
   m_Name: Shield
   m_TagString: PowerUp_Escudo
@@ -1104,6 +1147,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8.94, y: 8.94}
   m_EdgeRadius: 0
+--- !u!50 &1873941421
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1873941417}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0.2
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1970657757
 GameObject:
   m_ObjectHideFlags: 0
@@ -1266,6 +1329,7 @@ GameObject:
   - component: {fileID: 2065542960}
   - component: {fileID: 2065542959}
   - component: {fileID: 2065542961}
+  - component: {fileID: 2065542962}
   m_Layer: 0
   m_Name: Laser
   m_TagString: PowerUp_Rayo
@@ -1353,3 +1417,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.28, y: 1.28}
   m_EdgeRadius: 0
+--- !u!50 &2065542962
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2065542958}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0.2
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
