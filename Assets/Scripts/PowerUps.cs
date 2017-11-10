@@ -12,8 +12,8 @@ public class PowerUps : MonoBehaviour {
 
 	void Start () {
 		EscudoLife = 10;
-		gameObject.transform.GetChild (0).GetComponent <MeshRenderer> ().enabled = false;
-		gameObject.transform.GetChild (0).GetComponent <CircleCollider2D> ().enabled = false;
+		//gameObject.transform.GetChild (0).GetComponent <MeshRenderer> ().enabled = false;
+		//gameObject.transform.GetChild (0).GetComponent <CircleCollider2D> ().enabled = false;
 	}
 
 	void Update()
