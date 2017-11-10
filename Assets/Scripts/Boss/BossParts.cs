@@ -23,7 +23,7 @@ public class BossParts : MonoBehaviour {
 	{
 		if(_col.CompareTag("P_bullet"))
 		{
-			HP -= _col.GetComponent<AllBullets> ().Damage * Armor;
+			HP -= 1 * Armor;
 		}
 	}
 
