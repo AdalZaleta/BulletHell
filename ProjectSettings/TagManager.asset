@@ -7,6 +7,7 @@ TagManager:
   - Balas
   - Bullet
   - P_bullet
+  - Wall
   layers:
   - Default
   - TransparentFX

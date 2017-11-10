@@ -129,4 +129,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbdeb46e71fc3d64cb55b3793d088cfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debris: {fileID: 0}
+  debris: {fileID: 1809378175528550, guid: 00f285737fb6e7e4fbdfd58d5ebb3767, type: 2}
+  Damage: 1

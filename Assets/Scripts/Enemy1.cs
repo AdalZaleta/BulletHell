@@ -21,6 +21,8 @@ public class Enemy1 : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		gameObject.GetComponent <BoxCollider2D>().enabled = false;
+		StartCoroutine (activate(startdelay));
 		deathtimer = startdelay + moveTime + stayTime + 1.0f;
 		Destroy (gameObject, deathtimer);
 		if (goTo.Length != 0)
@@ -44,4 +46,10 @@ public class Enemy1 : MonoBehaviour {
 		yield return new WaitForSeconds (startdelay);
 		EnemyMoves.Curve (gameObject, bezier, curveTime);
 	} 
+
+	IEnumerator activate (float _delay)
+	{
+		yield return new WaitForSeconds (_delay);
+		gameObject.GetComponent <BoxCollider2D>().enabled = true;
+	}
 }

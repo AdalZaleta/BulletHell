@@ -21,7 +21,7 @@ public class InGameData : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (player && player.GetComponent <movementtest>().HP == 0)
+		if (player && player.GetComponent <movementtest>().HP <= 0)
 			SceneManager.LoadScene ("GameOver");
 
 		lifeNo.text = player.GetComponent<movementtest> ().HP.ToString ();
