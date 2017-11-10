@@ -44,6 +44,7 @@ public class BulletPool : MonoBehaviour {
 	void OnDisable()
 	{
 		cnt--;
+		gameObject.GetComponent <Rigidbody2D> ().velocity = Vector2.zero;
 	}
 	
 	// Update is called once per frame
