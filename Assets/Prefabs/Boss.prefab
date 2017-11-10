@@ -52,8 +52,8 @@ GameObject:
   - component: {fileID: 4958995246817238}
   - component: {fileID: 212745409752176966}
   - component: {fileID: 60130311535990360}
-  - component: {fileID: 114375361214559154}
   - component: {fileID: 50624010114296536}
+  - component: {fileID: 114045254167389596}
   m_Layer: 0
   m_Name: Sk_Rfore
   m_TagString: Untagged
@@ -242,8 +242,8 @@ GameObject:
   - component: {fileID: 4351026343144320}
   - component: {fileID: 212447659314127198}
   - component: {fileID: 60194105193419886}
-  - component: {fileID: 114620384551800636}
   - component: {fileID: 50774732066212628}
+  - component: {fileID: 114429383676624582}
   m_Layer: 0
   m_Name: Sk_head
   m_TagString: Untagged
@@ -261,8 +261,8 @@ GameObject:
   - component: {fileID: 4342876090728720}
   - component: {fileID: 212463278112478562}
   - component: {fileID: 60065903520491964}
-  - component: {fileID: 114091541227092364}
   - component: {fileID: 50327085517003130}
+  - component: {fileID: 114440557775877576}
   m_Layer: 0
   m_Name: Sk_Rarm
   m_TagString: Untagged
@@ -280,8 +280,8 @@ GameObject:
   - component: {fileID: 4235728538768222}
   - component: {fileID: 212903621089337680}
   - component: {fileID: 60087587086822968}
-  - component: {fileID: 114690781307591360}
   - component: {fileID: 50827695115417954}
+  - component: {fileID: 114273818698414612}
   m_Layer: 0
   m_Name: Sk_Lfore
   m_TagString: Untagged
@@ -300,8 +300,8 @@ GameObject:
   - component: {fileID: 212964937132689140}
   - component: {fileID: 114574540328441158}
   - component: {fileID: 60629735112243060}
-  - component: {fileID: 114776060581340334}
   - component: {fileID: 50357780262428968}
+  - component: {fileID: 114040969379004234}
   m_Layer: 0
   m_Name: Sk_torax
   m_TagString: Untagged
@@ -317,7 +317,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4503271583132174}
-  - component: {fileID: 114353537132374616}
+  - component: {fileID: 114397655142683402}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Untagged
@@ -335,8 +335,8 @@ GameObject:
   - component: {fileID: 4962801934861476}
   - component: {fileID: 212434123891796800}
   - component: {fileID: 60539876817777726}
-  - component: {fileID: 114104290844284750}
   - component: {fileID: 50470891291639482}
+  - component: {fileID: 114763799016488978}
   m_Layer: 0
   m_Name: Sk_Larm
   m_TagString: Untagged
@@ -518,7 +518,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1942003724321904}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.787668, y: 1.0307689, z: 0}
+  m_LocalPosition: {x: 0.21497932, y: 2.364806, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4724368544902260}
@@ -2514,6 +2514,32 @@ PolygonCollider2D:
       - {x: -0.79999995, y: 3.245}
       - {x: -0.85999995, y: 3.215}
       - {x: -0.84999996, y: 3.205}
+--- !u!114 &114040969379004234
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1935951757946880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7219468bce95419428feec3446d7fa03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 10
+  Armor: 1
+--- !u!114 &114045254167389596
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1123706360768376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7219468bce95419428feec3446d7fa03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 10
+  Armor: 1
 --- !u!114 &114067447548591466
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2530,32 +2556,6 @@ MonoBehaviour:
   veldis: 500
   pivot: {fileID: 1508690798434056}
   bullet: {fileID: 1870821078268958, guid: bc10b3877d1f5064daec643105b0639f, type: 2}
---- !u!114 &114091541227092364
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1904394564752256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee4f1dbc553c1564a82b8a3fdf9ab923, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HP: 10
-  Armor: 1
---- !u!114 &114104290844284750
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1996609508204510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee4f1dbc553c1564a82b8a3fdf9ab923, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HP: 10
-  Armor: 1
 --- !u!114 &114113855533086484
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2588,7 +2588,20 @@ MonoBehaviour:
   veldis: 500
   pivot: {fileID: 1104632382707152}
   bullet: {fileID: 1870821078268958, guid: bc10b3877d1f5064daec643105b0639f, type: 2}
---- !u!114 &114353537132374616
+--- !u!114 &114273818698414612
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1922551046396370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7219468bce95419428feec3446d7fa03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 10
+  Armor: 1
+--- !u!114 &114397655142683402
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -2596,7 +2609,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1942003724321904}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c08da4474fcacb245bd2054f2e16899c, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f233309c33e33d49ac8050266d48458, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   EyeCannonR: {fileID: 1511092259410244}
@@ -2607,15 +2620,28 @@ MonoBehaviour:
   leftNip: {fileID: 1470110849780016}
   TotalHP: 0
   StartingHP: 0
---- !u!114 &114375361214559154
+--- !u!114 &114429383676624582
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1123706360768376}
+  m_GameObject: {fileID: 1845080093914438}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee4f1dbc553c1564a82b8a3fdf9ab923, type: 3}
+  m_Script: {fileID: 11500000, guid: 7219468bce95419428feec3446d7fa03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 10
+  Armor: 1
+--- !u!114 &114440557775877576
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1904394564752256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7219468bce95419428feec3446d7fa03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   HP: 10
@@ -2653,32 +2679,6 @@ MonoBehaviour:
   veldis: 500
   pivot: {fileID: 1227518635620660}
   bullet: {fileID: 1870821078268958, guid: bc10b3877d1f5064daec643105b0639f, type: 2}
---- !u!114 &114620384551800636
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1845080093914438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee4f1dbc553c1564a82b8a3fdf9ab923, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HP: 10
-  Armor: 1
---- !u!114 &114690781307591360
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1922551046396370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee4f1dbc553c1564a82b8a3fdf9ab923, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HP: 10
-  Armor: 1
 --- !u!114 &114752851646382268
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2695,15 +2695,15 @@ MonoBehaviour:
   veldis: 500
   pivot: {fileID: 1470110849780016}
   bullet: {fileID: 1870821078268958, guid: bc10b3877d1f5064daec643105b0639f, type: 2}
---- !u!114 &114776060581340334
+--- !u!114 &114763799016488978
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1935951757946880}
+  m_GameObject: {fileID: 1996609508204510}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee4f1dbc553c1564a82b8a3fdf9ab923, type: 3}
+  m_Script: {fileID: 11500000, guid: 7219468bce95419428feec3446d7fa03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   HP: 10
