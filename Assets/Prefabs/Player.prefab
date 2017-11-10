@@ -113,7 +113,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1281111546104270}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4, z: 0}
+  m_LocalPosition: {x: -0.8628649, y: -3.9990368, z: 0}
   m_LocalScale: {x: 0.08, y: 0.08, z: 0.08}
   m_Children:
   - {fileID: 4591397675831110}
@@ -256,8 +256,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puedo: 0
-  delay: 1
-  veldis: 10
+  delay: 0.09
+  veldis: 600
   DisparoIzq: {fileID: 1614005349791102}
   DisparoIzqx: {fileID: 1841160322940168}
   DisparoDer: {fileID: 1444007288086816}

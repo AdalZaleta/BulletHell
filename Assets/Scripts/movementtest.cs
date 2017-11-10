@@ -27,6 +27,7 @@ public class movementtest : MonoBehaviour {
 			HP--;
 			gameObject.GetComponent <CircleCollider2D>().enabled = false;
 			gameObject.SetActive (false);
+			cam.GetComponent <Cam>().callBlink ();
 		}
 	}
 
@@ -34,10 +35,10 @@ public class movementtest : MonoBehaviour {
 	void Start () {
 		Vector2 corner = Camera.main.ScreenToWorldPoint (Vector3.zero);
 
-		Xmin = corner.x;
-		Xmax = -corner.x;
-		Ymin = corner.y;
-		Ymax = -corner.y;
+		Xmin = corner.x +0.25f;
+		Xmax = -corner.x -0.25f;
+		Ymin = corner.y +0.25f;
+		Ymax = -corner.y -0.25f;
 	}
 	
 	// Update is called once per frame

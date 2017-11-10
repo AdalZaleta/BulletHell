@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Shoot : MonoBehaviour {
 
+	public int shootstyle;
+	public float delay;
+	float shootdelay;
 	float framecount = 0;
 	float framecountS = 0;
 	public GameObject pivot;
@@ -12,26 +15,46 @@ public class Shoot : MonoBehaviour {
 	public bool Trigger_Circle;
 	public bool Trigger_Spiral;
 
+	bool onscreen;
+	float Xmin;
+	float Xmax;
+	float Ymin;
+	float Ymax;
+
 	// Use this for initialization
 	void Start () {
+		Vector2 corner = Camera.main.ScreenToWorldPoint (Vector3.zero);
+
+		Xmin = corner.x;
+		Xmax = -corner.x;
+		Ymin = corner.y;
+		Ymax = -corner.y;
+
 		player = GameObject.FindGameObjectWithTag ("Player");
+		shootdelay = delay;
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
+		shootdelay -= 0.2f;
 		framecountS += 0.2f;
 		framecount += 0.2f;
 
-		if (Input.GetKey (KeyCode.K)) {
+		if (transform.position.x >= Xmin && transform.position.x <= Xmax && transform.position.y >= Ymin && transform.position.y <= Ymax)
+			onscreen = true;
+		else
+			onscreen = false;
+
+		if (shootstyle == 1 && onscreen) {
 			Shoot_Spiral ();
 		}
 
-		if (Input.GetKey (KeyCode.J)) {
+		if (shootstyle == 2 && onscreen) {
 			Shoot_Circle ();
 		}
 
-		if (Input.GetKeyDown (KeyCode.G)) {
+		if (shootstyle == 3 && shootdelay <= 0 && onscreen) {
 			Shoot_Heatseak ();
 		}
 
@@ -62,6 +85,8 @@ public class Shoot : MonoBehaviour {
 			}
 		}
 
+		if (shootdelay <= 0)
+			shootdelay = delay;
 		if (framecountS >= 0.8)
 			framecountS = 0;
 		if (framecount >= 1.5)

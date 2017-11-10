@@ -19,11 +19,9 @@ public class Cam : MonoBehaviour {
 		
 	}
 
-	public void Reset ()
+	public void callBlink()
 	{
-		player.transform.position = new Vector3(0.0f, -4.0f, 0.0f);
-		StartCoroutine (Blink (5));
-		player.SetActive (true);
+		StartCoroutine (Blink (4));
 	}
 
 	IEnumerator Blink(int Bcount)
