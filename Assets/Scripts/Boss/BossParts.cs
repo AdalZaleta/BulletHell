@@ -14,7 +14,10 @@ public class BossParts : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (HP <= 0) {
+			HP = 0;
+			gameObject.GetComponent<Rigidbody2D> ().bodyType = RigidbodyType2D.Dynamic;
+		}
 	}
 	void OnTriggerEnter(Collider _col)
 	{
