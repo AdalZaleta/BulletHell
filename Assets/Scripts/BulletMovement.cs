@@ -4,30 +4,19 @@ using UnityEngine;
 
 public class BulletMovement : MonoBehaviour {
 
-	public float speed;
-	public GameObject pivot;
-
 	// Use this for initialization
-	void Start () {
-		gameObject.transform.position = pivot.transform.position;
-		gameObject.transform.rotation = pivot.transform.rotation;
-	}
-
-	void OnEnable ()
+	void OnEnable () 
 	{
-		gameObject.transform.rotation = pivot.transform.rotation;
-		gameObject.GetComponent <Rigidbody2D>().AddRelativeForce (Vector2.up * speed);
+		Invoke ("Eliminar", 1f);
 	}
 
-	void OnDisable()
+	void Eliminar()
 	{
-		if (pivot)
-			gameObject.transform.position = pivot.transform.position;
+		gameObject.SetActive (false);
 	}
 
-	
-	// Update is called once per frame
-	void Update () {
-		
+	void OnDisable ()
+	{
+		gameObject.GetComponent <Rigidbody2D> ().velocity = Vector2.zero;
 	}
 }

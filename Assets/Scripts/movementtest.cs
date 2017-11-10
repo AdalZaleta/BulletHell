@@ -10,10 +10,10 @@ public class movementtest : MonoBehaviour {
 	float offsetX;
 	float offsetY;
 
-	public float Xmin;
-	public float Xmax;
-	public float Ymin;
-	public float Ymax;
+	float Xmin;
+	float Xmax;
+	float Ymin;
+	float Ymax;
 
 	public int HP = 3;
 

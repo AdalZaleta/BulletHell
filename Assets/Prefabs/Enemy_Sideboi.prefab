@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4168739931227528}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82,7 +82,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1933554393729982}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4, y: 4, z: 0}
+  m_LocalPosition: {x: -3.6855593, y: 3.5595384, z: 0}
   m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children:
   - {fileID: 4728025688536094}
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootstyle: 3
-  delay: 5
+  delay: 1
+  veldis: 500
   pivot: {fileID: 1705402445063710}
-  Trigger_Circle: 0
-  Trigger_Spiral: 0
+  bullet: {fileID: 1870821078268958, guid: bc10b3877d1f5064daec643105b0639f, type: 2}

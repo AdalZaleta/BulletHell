@@ -37,6 +37,7 @@ public class BulletPool : MonoBehaviour {
 		}
 		GameObject newBullet = Instantiate (bulletPool[0]) as GameObject;
 		bulletPool.Add (newBullet);
+		newBullet.GetComponent <Rigidbody2D>().AddRelativeForce (Vector2.up * 10);
 		return newBullet;
 	}
 

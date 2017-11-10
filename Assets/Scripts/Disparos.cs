@@ -35,16 +35,6 @@ public class Disparos : MonoBehaviour {
 
 	void Update ()
 	{
-		if (Input.GetKeyDown (KeyCode.Keypad8))
-			veldis += 10;
-		if (Input.GetKeyDown (KeyCode.Keypad2))
-			veldis -= 10;
-		if (Input.GetKeyDown (KeyCode.Alpha1))
-			Modo = 1;
-		if (Input.GetKeyDown (KeyCode.Alpha2))
-			Modo = 2;
-		if (Input.GetKeyDown (KeyCode.Alpha3))
-			Modo = 3;
 		if (Input.touchCount > 0 && puedo && Modo == 1)
 		{
 			GameObject go = GenerarBala (DisparoIzq.gameObject.transform.position);
