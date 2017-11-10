@@ -6,6 +6,7 @@ public class BossParts : MonoBehaviour {
 
 	public float HP;
 	public float Armor;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -13,13 +14,17 @@ public class BossParts : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
-
-	void OnTriggerEnter2D(Collider2D _col)
-	{
-		if (_col.CompareTag ("Bullet")) {
-			
+		if (HP <= 0) {
+			HP = 0;
+			gameObject.GetComponent<Rigidbody2D> ().bodyType = RigidbodyType2D.Dynamic;
 		}
 	}
+	void OnTriggerEnter(Collider _col)
+	{
+		if(_col.CompareTag("P_bullet"))
+		{
+			HP -= _col.GetComponent<AllBullets> ().Damage * Armor;
+		}
+	}
+
 }
