@@ -1,5 +1,6 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 guid: 10361d0d67220c54ea287477d7057372
 folderAsset: yes
 timeCreated: 1510086737
@@ -8,6 +9,11 @@ guid: 816e6c6932cdaa54fa4dfdf5727a35e9
 folderAsset: yes
 timeCreated: 1509481528
 >>>>>>> UI
+=======
+guid: 0608a8530988ff2408fb1f0d0152dc24
+folderAsset: yes
+timeCreated: 1509477652
+>>>>>>> Powe-Ups
 licenseType: Free
 DefaultImporter:
   userData: 
