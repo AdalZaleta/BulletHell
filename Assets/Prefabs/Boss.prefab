@@ -520,7 +520,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1522955376777842}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.05, y: 1.78, z: 0}
+  m_LocalPosition: {x: -5.205082, y: 1.7227983, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4353154554741410}
@@ -2522,9 +2522,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1232470734794566}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: ee4f1dbc553c1564a82b8a3fdf9ab923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HP: 10
+  Armor: 1
 --- !u!114 &114069569499363500
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2533,9 +2535,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1486656145212524}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: ee4f1dbc553c1564a82b8a3fdf9ab923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HP: 10
+  Armor: 1
 --- !u!114 &114080644108363600
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2544,9 +2548,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1051419066524884}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: ee4f1dbc553c1564a82b8a3fdf9ab923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HP: 10
+  Armor: 1
 --- !u!114 &114140213131541458
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2555,9 +2561,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1731181358179814}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: ee4f1dbc553c1564a82b8a3fdf9ab923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HP: 10
+  Armor: 1
 --- !u!114 &114155854047142978
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2642,9 +2650,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1353321340579158}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: ee4f1dbc553c1564a82b8a3fdf9ab923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HP: 10
+  Armor: 1
 --- !u!114 &114365534607005304
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2672,9 +2682,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1927676574130658}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: ee4f1dbc553c1564a82b8a3fdf9ab923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  HP: 10
+  Armor: 1
 --- !u!114 &114690458519691406
 MonoBehaviour:
   m_ObjectHideFlags: 1
