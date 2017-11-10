@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 8417b9ff5e22a804eae412c99c07bd32
 folderAsset: yes
 timeCreated: 1509477626
+=======
+guid: 9d5a895e756c57043963d06dcd83fcc9
+folderAsset: yes
+timeCreated: 1508528154
+>>>>>>> MergeTest
 licenseType: Free
 DefaultImporter:
   userData: 
