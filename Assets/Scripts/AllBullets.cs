@@ -13,7 +13,10 @@ public class AllBullets : MonoBehaviour {
 			DeletThis ();
 		}
 	}
-
+	void OnEnable () 
+	{
+		Invoke ("DeletThis", 1f);
+	}
 	public void DeletThis()
 	{
 		if (debris != null) {
@@ -21,7 +24,10 @@ public class AllBullets : MonoBehaviour {
 		}
 		gameObject.SetActive (false);
 	}
+<<<<<<< HEAD
 
+=======
+>>>>>>> BossBoi-Returns-from-the-dead
 	void OnDisable ()
 	{
 		gameObject.GetComponent <Rigidbody2D> ().velocity = Vector2.zero;

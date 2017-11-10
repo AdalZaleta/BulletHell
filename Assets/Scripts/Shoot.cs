@@ -140,7 +140,12 @@ public class Shoot : MonoBehaviour {
 
 	IEnumerator Disparar()
 	{
-		yield return new WaitForSeconds (delay);
+		yield return new WaitForSeconds (Time.deltaTime * delay);
 		canshoot = true;
 	}
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> BossBoi-Returns-from-the-dead
 }
